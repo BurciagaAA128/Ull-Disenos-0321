@@ -1,44 +1,31 @@
-//Pantalla2_0321
-
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class Pantalla2_0321 extends StatelessWidget {
-  const Pantalla2_0321({Key? key}) : super(key: key);
+class Pantalla6_0321 extends StatelessWidget {
+  const Pantalla6_0321({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Pantalla 2 Burciaga0321",
-          style: TextStyle(color: Colors.white),
-        ),
-        backgroundColor: Color(0xfff6991f),
+        title: const Text("Pantalla 6 Burciaga0321",
+            style: TextStyle(color: Colors.white)),
+        backgroundColor: Color(0xff0c7203),
       ),
       body: Center(
         child: Column(
           children: [
             Container(
-              height: 130,
-              width: double.infinity,
+              margin: EdgeInsets.all(40),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Color(0xffd25c0d),
+                color: Color(0xff088e30),
                 borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50),
-                  bottomLeft: Radius.circular(50),
+                  topRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
                 ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xaa862c09),
-                    offset: Offset(9, 9),
-                    blurRadius: 6,
-                  ),
-                ],
               ),
-              alignment: Alignment.center,
               child: Text(
-                'Mi header',
+                'Corner',
                 style: TextStyle(
                   fontSize: 38,
                   color: Colors.white,
@@ -54,13 +41,13 @@ class Pantalla2_0321 extends StatelessWidget {
             ),
             Container(
               child: const Text(
-                "Header Mat. 20308051280321",
+                "Corners Mat. 20308051280321",
                 style: TextStyle(fontSize: 20),
               ),
             )
-          ],
+          ], //Niños
         ),
       ),
     );
-  } //Widget
-} //Fin pantalla2
+  } //Fin widget
+} //Fin pantalla1
